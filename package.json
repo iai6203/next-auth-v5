@@ -1,0 +1,10 @@
+{
+  "name": "next-auth-v5",
+  "version": "1.0.0",
+  "scripts": {
+    "www": "pnpm --filter www",
+    "dev:services": "docker-compose --profile services up",
+    "dev:services-down": "docker-compose --profile services down"
+  },
+  "license": "MIT"
+}
