@@ -26,7 +26,6 @@
 - 👮 currentRole utility (Server-Side 세션 권한 조회)
 - 🖥️ 서버 컴포넌트 예제
 - 💻 클라이언트 컴포넌트 예제
-- 👑 Render content for admins using RoleGate component
 - 🛡️ 관리자 전용 API (권한에 따른 접근 제어)
 - 🔐 관리자 전용 서버 액션 (권한에 따른 접근 제어)
 - 📧 이메일 변경 (변경 시 재인증)
