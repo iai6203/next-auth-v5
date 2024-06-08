@@ -1,6 +1,9 @@
 # Next Auth v5 (2024)
 
-핵심 기능:
+---
+
+### 핵심 기능
+
 - 🔐 NextAuth v5 (Auth.js)
 - 🚀 Next.js 14 서버 액션
 - 🔑 Credentials Provider
@@ -32,3 +35,42 @@
 - 🔑 비밀번호 변경 (변경 시 기존 비밀번호 검증)
 - 🔔 2단계 인증(2FA) 활성/비활성
 - 🔄 권한 변경
+
+---
+
+### ✋ 시작하기
+
+#### 필수 환경 구성
+
+- Node
+- Docker
+- Resend (이메일 발송 시 사용)
+
+#### 패키지 설치
+
+```shell
+pnpm install
+```
+
+
+#### 환경 변수
+
+1. `./apps/www/.env.example` 파일을 복사하여 `./apps/www/.env` 생성
+2. `.env` 파일 내 환경 변수 설정
+
+
+#### 데이터베이스
+
+```shell
+# 데이터베이스 컨테이너 실행
+pnpm run dev:services
+
+# 테이블 생성 (Prisma)
+cd ./apps/www
+npx prisma db push
+```
+
+#### 서비스 실행
+```shell
+pnpm www dev
+```
